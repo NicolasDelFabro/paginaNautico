@@ -29,7 +29,7 @@ export const Menu = () => {
         )}
       </button>
       {isOpen && (
-        <div className="absolute right-0 mt-2 mr-10 w-48 bg-[#CBDCEB] rounded shadow-lg">
+        <div className="absolute right-0 -mt-16 mr-16 w-48 bg-[#CBDCEB] rounded shadow-lg">
           <ul className="border-">
             <li>
               <Link href="/login"
