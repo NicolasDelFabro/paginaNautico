@@ -3,7 +3,7 @@ import Link from "next/link";
 const FormRegister = () => {
     return(
         <div className="flex justify-center items-center">
-            <div className="flex justify-center items-center">
+            <div className="flex flex-col bg-red-600">
                 <div>
                     <ul>
                         <li>
@@ -23,6 +23,14 @@ const FormRegister = () => {
                             />
                         </li>
                         <li>
+                            <label htmlFor="">Edad: </label>
+                            <input className=""
+                                type="text"
+                                id="edad"
+                                name="edad"
+                            />
+                        </li>
+                        <li>
                             <label htmlFor="">Dirección: </label>
                             <input className="" 
                                 type="text"
@@ -31,6 +39,13 @@ const FormRegister = () => {
                             />
                         </li>
                     </ul>
+                </div>
+                <div className="flex justify-center items-center">
+                    <button>Enviar</button>
+                    <span>¿Ya tinenes una cuenta?</span>
+                    <Link href="/login">
+                        <span>Inicia sesion acá</span>
+                    </Link>
                 </div>
             </div>
         </div>
