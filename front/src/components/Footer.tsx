@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return(
-        <div>
+        <div className="bg-[#002346]">
             <div>
                 <span>Whatsapp: </span>
                 <Link href="/#">numero de telefono</Link>
