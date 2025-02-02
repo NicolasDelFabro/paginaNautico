@@ -3,13 +3,17 @@ import Menu from "@/components/Menu"
 
 const NavBar = () => {
     return(
-        <div className="flex justify-between items-center px-6 h-[7rem] bg-[#002346]">
+            <div className="bg-[#002346] flex justify-between items-center w-screen
+            2xs: h-[55px] px-2
+            sm: h-[70px] px-10
+            md: h-[70px] px-4
+            ">
             <div className="text-2xl">
-                <Link href="/#">
+                <Link href="/">
                     Club Náutico Pergamino
                 </Link>
             </div>
-            <div className="w-auto">
+            <div>
                 <Menu />
             </div>
         </div>
