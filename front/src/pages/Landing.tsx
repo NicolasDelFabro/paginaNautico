@@ -12,7 +12,7 @@ export default function Background() {
     }, []);
   
     return (
-    <div className="relative h-screen w-screen">
+    <div className="relative z-10 h-screen w-screen">
         <div
           className="absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-65"
           style={{ backgroundImage: Background }}

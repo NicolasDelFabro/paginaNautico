@@ -11,7 +11,7 @@ const Menu = () => {
   };
 
   return (
-    <div className="cxczcx">
+    <div>
       <button
         onClick={handleToggle}
         className="flex flex-col items-center justify-center w-10 h-10 bg-transparent border-none cursor-pointer"
@@ -58,11 +58,9 @@ const Menu = () => {
       <div
         className={`${
           isOpen ? 'block' : 'hidden'
-        } bg-[#002346] text-white
-        2xs: relative w-screen right-[-16px] top-[55px] opacity-40`}
+        } bg-[#002346] text-white`}
       >
-        <ul className="flex flex-col
-        2xs: absolute pl-2 py-3 space-y-4 opacity-100">
+        <ul className="flex flex-col">
           <li>
             <Link href="/#" className="hover:font-semibold">
                 <span>
