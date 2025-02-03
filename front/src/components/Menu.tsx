@@ -35,16 +35,17 @@ const Menu = () => {
 
       {/* Menú de opciones */}
       <div
-        className={`${isOpen ? 'block' : 'hidden'} bg-red-900 text-white absolute top-16 right-0 w-40 p-4`}
+        className={`${isOpen ? 'block' : 'hidden'} bg-black text-white p-4
+        2xs: w-screen right-0 top-[70px] bg-opacity-20 text-center absolute z-20`}
       >
         <ul className="flex flex-col space-y-4">
           <li>
-            <Link href="/#" className="hover:font-semibold">
+            <Link href="/#" className="hover:font-bold">
               Iniciar sesión
             </Link>
           </li>
           <li>
-            <Link href="/#" className="hover:font-semibold">
+            <Link href="/#" className="hover:font-bold">
               Registrarse
             </Link>
           </li>
