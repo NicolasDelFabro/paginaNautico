@@ -40,12 +40,12 @@ const Menu = () => {
       >
         <ul className="flex flex-col space-y-4">
           <li>
-            <Link href="/#" className="hover:font-bold">
+            <Link href="/login" className="hover:font-bold">
               Iniciar sesión
             </Link>
           </li>
           <li>
-            <Link href="/#" className="hover:font-bold">
+            <Link href="/register" className="hover:font-bold">
               Registrarse
             </Link>
           </li>
