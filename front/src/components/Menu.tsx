@@ -10,6 +10,10 @@ const Menu = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div>
       {/* Botón para abrir y cerrar el menú */}
@@ -36,16 +40,16 @@ const Menu = () => {
       {/* Menú de opciones */}
       <div
         className={`${isOpen ? 'block' : 'hidden'} bg-black text-white p-4
-        2xs: w-screen right-0 top-[70px] bg-opacity-20 text-center absolute z-20`}
+        2xs:w-screen right-0 top-[70px] bg-opacity-20 text-center absolute z-20`}
       >
         <ul className="flex flex-col space-y-4">
           <li>
-            <Link href="/login" className="hover:font-bold">
+            <Link href="/login" className="hover:font-bold" onClick={handleClose}>
               Iniciar sesión
             </Link>
           </li>
           <li>
-            <Link href="/register" className="hover:font-bold">
+            <Link href="/register" className="hover:font-bold" onClick={handleClose}>
               Registrarse
             </Link>
           </li>
